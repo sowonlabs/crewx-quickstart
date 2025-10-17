@@ -1,0 +1,38 @@
+{
+  "name": "crewx-quickstart",
+  "version": "0.1.0",
+  "description": "Zero-friction scaffold for trying CrewX custom agents in under 30 seconds.",
+  "bin": {
+    "crewx-quickstart": "bin/crewx-quickstart.js"
+  },
+  "keywords": [
+    "crewx",
+    "quickstart",
+    "scaffold",
+    "ai-agents",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Sowon Labs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sowonlabs/crewx-quickstart"
+  },
+  "bugs": {
+    "url": "https://github.com/sowonlabs/crewx-quickstart/issues"
+  },
+  "homepage": "https://github.com/sowonlabs/crewx-quickstart#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "templates",
+    "README.md"
+  ],
+  "type": "module",
+  "scripts": {
+    "start": "node bin/crewx-quickstart.js",
+    "test": "node --eval \"console.log('Run npx crewx-quickstart to verify manually')\""
+  }
+}
