@@ -110,12 +110,15 @@ async function main() {
   formatOutput('');
   formatOutput('🎉 CrewX quickstart is ready!');
 
+  formatOutput('\n📦 Install CrewX CLI (if not already installed):');
+  formatOutput('   npm install -g crewx');
+
   if (targetName !== '.') {
     const relativePath = path.relative(process.cwd(), targetDir) || '.';
-    formatOutput(`📂 Project location: ${relativePath}`);
+    formatOutput(`\n📂 Project location: ${relativePath}`);
     formatOutput(`➡️  Next steps:\n   cd ${relativePath}\n   crewx q "@quickstart hi"`);
   } else {
-    formatOutput('➡️  Next steps:\n   crewx q "@quickstart hi"');
+    formatOutput('\n➡️  Next steps:\n   crewx q "@quickstart hi"');
   }
 
   formatOutput('\n✨ Optional: To set up the Slack bot:');
