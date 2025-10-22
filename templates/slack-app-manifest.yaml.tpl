@@ -5,8 +5,6 @@ display_information:
   name: CrewX
   description: CrewX Slack Bot
   background_color: "#4A154B"
-  long_description: "Bring Your Own AI(BYOA) team in Slack/IDE(MCP) with your existing subscriptions "
-  short_description: "SowonAI CrewX Slack Bot"
 features:
   bot_user:
     display_name: CrewX
