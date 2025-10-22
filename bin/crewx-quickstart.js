@@ -73,6 +73,7 @@ async function main() {
   };
 
   const filesToGenerate = [
+    { tpl: 'CREWX.md.tpl', out: 'CREWX.md' },
     { tpl: 'crewx.yaml.tpl', out: 'crewx.yaml' },
     { tpl: 'env.slack.tpl', out: '.env.slack' },
     { tpl: 'slack-app-manifest.yaml.tpl', out: 'slack-app-manifest.yaml' },

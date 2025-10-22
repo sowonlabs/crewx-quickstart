@@ -1,6 +1,6 @@
 {
   "name": "crewx-quickstart",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Zero-friction scaffold for trying CrewX custom agents in under 30 seconds.",
   "bin": {
     "crewx-quickstart": "bin/crewx-quickstart.js"

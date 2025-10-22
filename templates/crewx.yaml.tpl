@@ -16,6 +16,8 @@ documents:
     You can add Markdown content here. It will be piped to the model
     whenever quickstart agents are invoked.
 
+    Read first crewx-manual.md 
+
 # Custom agents powered by CrewX.
 agents:
   - id: quickstart
