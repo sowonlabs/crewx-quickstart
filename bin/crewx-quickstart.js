@@ -75,6 +75,8 @@ async function main() {
   const filesToGenerate = [
     { tpl: 'crewx.yaml.tpl', out: 'crewx.yaml' },
     { tpl: 'env.slack.tpl', out: '.env.slack' },
+    { tpl: 'slack-app-manifest.yaml.tpl', out: 'slack-app-manifest.yaml' },
+    { tpl: 'crewx-manual.md.tpl', out: 'crewx-manual.md' },
     { tpl: 'start-slack.sh.tpl', out: 'start-slack.sh', makeExecutable: true },
     // { tpl: 'README.md.tpl', out: 'README.md' },
     // { tpl: 'gitignore.tpl', out: '.gitignore' },
@@ -115,7 +117,12 @@ async function main() {
     formatOutput('➡️  Next steps:\n   crewx q "@quickstart hi"');
   }
 
-  formatOutput('\n✨ Optional: customise crewx.yaml, then run ./start-slack.sh to launch the Slack bot.');
+  formatOutput('\n✨ Optional: To set up the Slack bot:');
+  formatOutput('   1. Create your Slack app at https://api.slack.com/apps?new_app=1');
+  formatOutput('   2. Click "From a manifest" then paste the slack-app-manifest.yaml content');
+  formatOutput('   3. Copy the tokens to .env.slack');
+  formatOutput('   4. Customize crewx.yaml if needed');
+  formatOutput('   5. Run ./start-slack.sh to launch the Slack bot');
 }
 
 main().catch((error) => {

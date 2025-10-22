@@ -20,14 +20,14 @@ documents:
 agents:
   - id: quickstart
     name: "Quickstart Assistant"
-    provider: "cli/claude"
     description: "Friendly assistant configured by the CrewX quickstart scaffold."
     capabilities:
       - query          # read-only operations (default)
       - implementation # allow execute mode when you are ready
     inline:
+      provider: "cli/claude"
       model: "haiku"
-      system_prompt: |
+      prompt: |
         You are the Quickstart assistant for the project "{{PROJECT_NAME}}".
         Provide concise, actionable help. Ask clarifying questions before
         editing files. Summarise every plan in bullet points.
@@ -38,6 +38,3 @@ agents:
         </document>
         <documents>
         
-        <messages>
-        {{{formatConversation messages platform}}}
-        </messages>

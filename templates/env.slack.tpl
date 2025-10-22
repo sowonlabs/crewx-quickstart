@@ -1,7 +1,10 @@
-# Slack credentials for CrewX Quickstart
-# Copy the tokens from your Slack app (see SLACK_INSTALL.md in the main repo).
-# The quickstart keeps everything in this file so you can `source` it easily.
+# Copy the following tokens.
 
+# OAuth & Permissions > OAuth Tokens > Install to Workspace
 SLACK_BOT_TOKEN=xoxb-your-bot-token
+
+# Basic Information
 SLACK_SIGNING_SECRET=your-signing-secret
+
+# Socket Mode > Reinstall (Enabled Socket Mode off > on)
 SLACK_APP_LEVEL_TOKEN=xapp-your-app-level-token
