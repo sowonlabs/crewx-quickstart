@@ -14,9 +14,9 @@ set -a
 source "${SCRIPT_DIR}/.env.slack"
 set +a
 
-if [[ -z "${SLACK_BOT_TOKEN:-}" || -z "${SLACK_SIGNING_SECRET:-}" || -z "${SLACK_APP_LEVEL_TOKEN:-}" ]]; then
+if [[ -z "${SLACK_BOT_TOKEN:-}" || -z "${SLACK_SIGNING_SECRET:-}" || -z "${SLACK_APP_TOKEN:-}" ]]; then
   echo "❌ Missing Slack credentials. Please update .env.slack:"
-  echo "   SLACK_BOT_TOKEN, SLACK_SIGNING_SECRET, SLACK_APP_LEVEL_TOKEN"
+  echo "   SLACK_BOT_TOKEN, SLACK_SIGNING_SECRET, SLACK_APP_TOKEN"
   exit 1
 fi
 
