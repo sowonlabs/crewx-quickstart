@@ -25,4 +25,4 @@ DEFAULT_AGENT="${CREWX_DEFAULT_AGENT:-quickstart}"
 echo "🚀 Starting CrewX Slack bot (agent: ${DEFAULT_AGENT})"
 echo "   Press Ctrl+C to stop."
 
-exec crewx slack --mode execute --agent "${DEFAULT_AGENT}" --log
+exec npx crewx slack --mode execute --agent "${DEFAULT_AGENT}" --log
